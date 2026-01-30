@@ -46,3 +46,11 @@ contract Jellycat {
         if (i == 3) return "Fluffy";
         if (i == 4) return "Squishy";
         if (i == 5) return "Blobby";
+        if (i == 6) return "Gelatin";
+        if (i == 7) return "Pudding";
+        if (i == 8) return "Marshmallow";
+        if (i == 9) return "Jellybean";
+        if (i == 10) return "Gummy";
+        if (i == 11) return "Slime";
+        if (i == 12) return "Custard";
+        if (i == 13) return "Mochi";
