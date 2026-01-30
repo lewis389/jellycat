@@ -38,3 +38,11 @@ contract Jellycat {
     }
 
     /// @notice One of 20 Jellycat "wobble" types derived from DNA. Unique per deployment.
+    function wobble() external view returns (string memory) {
+        uint256 i = uint256(dna) % 20;
+        if (i == 0) return "Bouncy";
+        if (i == 1) return "Wobbly";
+        if (i == 2) return "Jiggly";
+        if (i == 3) return "Fluffy";
+        if (i == 4) return "Squishy";
+        if (i == 5) return "Blobby";
