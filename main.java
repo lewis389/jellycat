@@ -30,3 +30,11 @@ contract Jellycat {
         );
         emit Hatched(dna, block.number);
     }
+
+    /// @notice Anyone can squeak this Jellycat once per tx. No value required.
+    function squeak() external {
+        squeakCount++;
+        emit Squeaked(msg.sender, squeakCount);
+    }
+
+    /// @notice One of 20 Jellycat "wobble" types derived from DNA. Unique per deployment.
