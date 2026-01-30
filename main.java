@@ -22,3 +22,11 @@ contract Jellycat {
             abi.encodePacked(
                 block.number,
                 block.timestamp,
+                block.prevrandao,
+                block.chainid,
+                address(this),
+                msg.sender
+            )
+        );
+        emit Hatched(dna, block.number);
+    }
