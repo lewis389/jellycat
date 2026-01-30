@@ -14,3 +14,11 @@ contract Jellycat {
     event Squeaked(address indexed who, uint256 totalSqueaks);
     event Hatched(bytes32 indexed dna, uint256 blockNumber);
 
+    constructor() {
+        birthBlock = block.number;
+        birthTime = block.timestamp;
+        hatchedBy = msg.sender;
+        dna = keccak256(
+            abi.encodePacked(
+                block.number,
+                block.timestamp,
