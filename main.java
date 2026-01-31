@@ -70,3 +70,6 @@ contract Jellycat {
     /// @notice Full DNA hash for proofs or external traits.
     function getDna() external view returns (bytes32) {
         return dna;
+    }
+}
+
