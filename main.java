@@ -54,3 +54,11 @@ contract Jellycat {
         if (i == 11) return "Slime";
         if (i == 12) return "Custard";
         if (i == 13) return "Mochi";
+        if (i == 14) return "Tapioca";
+        if (i == 15) return "Agar";
+        if (i == 16) return "Panna";
+        if (i == 17) return "Floof";
+        if (i == 18) return "Blob";
+        return "Jelly";
+    }
+
