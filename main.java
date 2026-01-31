@@ -62,3 +62,11 @@ contract Jellycat {
         return "Jelly";
     }
 
+    /// @notice Numeric "personality" 0–255 from DNA, for off-chain use.
+    function personalityByte() external view returns (uint8) {
+        return uint8(uint256(dna) & 0xff);
+    }
+
+    /// @notice Full DNA hash for proofs or external traits.
+    function getDna() external view returns (bytes32) {
+        return dna;
